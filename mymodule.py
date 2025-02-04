@@ -16,5 +16,4 @@ def recommend_movie(mood,df):
     # Sort by ratings (descending)
     filtered_movies = filtered_movies.sort_values(by="Rating", ascending=False)
     
-    # Pick top 3
     return filtered_movies[['Title', 'Rating']].head(10)
